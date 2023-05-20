@@ -5,7 +5,7 @@ import Profile from './components/profile/Profile';
 function App() {
   return (
     <div className="App">
-      <Profile name={1}></Profile>  
+      <Profile name={1}></Profile>   
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
