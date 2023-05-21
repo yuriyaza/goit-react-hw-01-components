@@ -1,4 +1,5 @@
 import PropTypes, { object } from 'prop-types';
+import { getRandomColor } from 'js/getRandomColor';
 import css from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
@@ -8,8 +9,12 @@ export const Statistics = ({ title, stats }) => {
 
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => {
+          const itemColor = {
+            backgroundColor: getRandomColor(),
+          };
+
           return (
-            <li className={css.item} key={id}>
+            <li className={css.item} style={itemColor} key={id}>
               <span className={css.label}>{label}</span>
               <span className={css.percentage}>{percentage + '%'}</span>
             </li>

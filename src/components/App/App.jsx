@@ -10,7 +10,7 @@ import { FriendList } from 'components/FriendList/FriendList';
 import transactions from 'data/transactions.json';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
-import css from './App.module.css'
+import css from './App.module.css';
 
 export const App = () => {
   return (
